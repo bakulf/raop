@@ -694,7 +694,6 @@ spec-clause code {
             <span class="marker">1.3</span>
             <a href="#motivations">Motivations</a>
           </li>
-
         </ol>
       </li>
 
@@ -706,6 +705,17 @@ spec-clause code {
       <li>
         <span class="marker">3</span>
         <a href="#classes_and_properties">Class and Properties</a>
+        <ol>
+          <li><span class="marker">3.1</span><a href="#class_Document">Class raop:Document</a></li>
+          <li><span class="marker">3.2</span><a href="#class_Group">Class raop:Group</a></li>
+          <li><span class="marker">3.3</span><a href="#class_Line">Class raop:Line</a></li>
+          <li><span class="marker">3.4</span><a href="#class_Word">Class raop:Word</a></li>
+          <li><span class="marker">3.5</span><a href="#property_items">Property raop:items</a></li>
+          <li><span class="marker">3.6</span><a href="#property_lines">Property raop:lines</a></li>
+          <li><span class="marker">3.7</span><a href="#property_rethoricAnnotation">Property raop:rethoricAnnotation</a></li>
+          <li><span class="marker">3.8</span><a href="#property_value">Property raop:value</a></li>
+          <li><span class="marker">3.9</span><a href="#property_words">Property raop:words</a></li>
+        </ol>
       </li>
 
       <li>
@@ -810,8 +820,305 @@ spec-clause code {
         </span>
       </header>
 
-      <p para_num="1" id="classes_and_properties.1">TBD</p>
+      <p para_num="1" id="classes_and_properties.1">This is a complete alphabetical A-Z index of all RAOP terms, by class (categories or types) and by property:</p>
+
+      <ul>
+        <li>Basic Classes:
+          <a href="#class_Document">Document</a>,
+          <a href="#class_Group">Group</a>,
+          <a href="#class_Line">Line</a>,
+          <a href="#class_Word">Word</a>
+        </li>
+
+        <li>Basic Properties:
+          <a href="#property_items">items</a>,
+          <a href="#property_lines">lines</a>,
+          <a href="#property_rethoricAnnotation">rethoricAnnotation</a>,
+          <a href="#property_value">value</a>,
+          <a href="#property_words">words</a>
+        </li>
+
+        <li>Rethoric Annotation Classes: TBD</li>
+
+        <li>Rethoric Annotation Properties: TBD</li>
+
+      </ul>
     </section>
+
+    <spec-section id="class_Document">
+      <section>
+        <header>
+          <span class="section-number">3.1</span>
+          <h1 data-bookmark-label="3.1 Class raop:Document">Class raop:Document</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#class_Document">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A document.</td>
+          </tr>
+          <tr>
+            <td><strong>Properties include:</strong></td>
+            <td><a href="#property_lines">Property raop:lines</a>,
+                <a href="#property_rethoricAnnotation">Property raop:rethoricAnnotation</a></td>
+          </tr>
+          <tr>
+            <td><strong>Subclass Of:</strong></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><strong>Disjoit With:</strong></td>
+            <td><a href="#class_Group">Class raop:Group</a>,
+                <a href="#class_Line">Class raop:Line</a>,
+                <a href="#class_Word">Class raop:Word</a></td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="class_Group">
+      <section>
+        <header>
+          <span class="section-number">3.2</span>
+          <h1 data-bookmark-label="3.2 Class raop:Group">Class raop:Group</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#class_Group">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A group of words, lines or groups.</td>
+          </tr>
+          <tr>
+            <td><strong>Properties include:</strong></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><strong>Used with:</strong></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><strong>Subclass Of:</strong></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><strong>Disjoit With:</strong></td>
+            <td>TBD</td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="class_Line">
+      <section>
+        <header>
+          <span class="section-number">3.3</span>
+          <h1 data-bookmark-label="3.3 Class raop:Line">Class raop:Line</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#class_Line">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A line of the document.</td>
+          </tr>
+          <tr>
+            <td><strong>Properties include:</strong></td>
+            <td><a href="#property_words">Property raop:words</a></td>
+          </tr>
+          <tr>
+            <td><strong>Used with:</strong></td>
+            <td><a href="#property_lines">Property raop:lines</a></td>
+          </tr>
+          <tr>
+            <td><strong>Subclass Of:</strong></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><strong>Disjoit With:</strong></td>
+            <td><a href="#class_Document">Class raop:Document</a>,
+                <a href="#class_Group">Class raop:Group</a>,
+                <a href="#class_Word">Class raop:Word</a></td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="class_Word">
+      <section>
+        <header>
+          <span class="section-number">3.4</span>
+          <h1 data-bookmark-label="3.4 Class raop:Word">Class raop:Word</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#class_Word">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A single word of the document.</td>
+          </tr>
+          <tr>
+            <td><strong>Properties include:</strong></td>
+            <td><a href="#property_value">Property raop:value</a></td>
+          </tr>
+          <tr>
+            <td><strong>Used with:</strong></td>
+            <td><a href="#property_words">Property raop:words</a></td>
+          </tr>
+          <tr>
+            <td><strong>Subclass Of:</strong></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><strong>Disjoit With:</strong></td>
+            <td><a href="#class_Document">Class raop:Document</a>,
+                <a href="#class_Group">Class raop:Group</a>,
+                <a href="#class_Line">Class raop:Line</a></td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="property_items">
+      <section>
+        <header>
+          <span class="section-number">3.5</span>
+          <h1 data-bookmark-label="3.5 Class raop:items">Class raop:items</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#property_items">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A RDF sequence of items (<a href="#class_Group">Class raop:Group</a>, <a href="#class_Line">Class raop:Line</a> or <a href="#class_Word">Class raop:Word</a>) for a rethorical annotation.</td>
+          </tr>
+          <tr>
+            <td><strong>Domain:</strong></td>
+            <td>TBD</td>
+          </tr>
+          <tr>
+            <td><strong>Range:</strong></td>
+            <td>RDF sequence of <a href="#class_Group">Class raop:Group</a>s, <a href="#class_Line">Class raop:Line</a>s, <a href="#class_Word">Class raop:Word</a>s</td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="property_lines">
+      <section>
+        <header>
+          <span class="section-number">3.6</span>
+          <h1 data-bookmark-label="3.6 Class raop:lines">Class raop:lines</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#property_lines">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A RDF sequence of <a href="#class_Line">Class raop:Line</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Domain:</strong></td>
+            <td><a href="#class_Document">Class raop:Document</a></td>
+          </tr>
+          <tr>
+            <td><strong>Range:</strong></td>
+            <td>A RDF sequence of <a href="#class_Line">Class raop:Line</a>s</td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="property_rethoricalAnnotation">
+      <section>
+        <header>
+          <span class="section-number">3.7</span>
+          <h1 data-bookmark-label="3.7 Class raop:rethoricalAnnotation">Class raop:rethoricalAnnotation</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#property_rethoricalAnnotation">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A rethorical annotation</td>
+          </tr>
+          <tr>
+            <td><strong>Domain:</strong></td>
+            <td><a href="#class_Document">Class raop:Document</a></td>
+          </tr>
+          <tr>
+            <td><strong>Range:</strong></td>
+            <td>TBD</td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="property_value">
+      <section>
+        <header>
+          <span class="section-number">3.8</span>
+          <h1 data-bookmark-label="3.8 Class raop:value">Class raop:value</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#property_value">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>The value of a word.</td>
+          </tr>
+          <tr>
+            <td><strong>Domain:</strong></td>
+            <td><a href="#class_Word">Class raop:Word</a></td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
+    <spec-section id="property_words">
+      <section>
+        <header>
+          <span class="section-number">3.9</span>
+          <h1 data-bookmark-label="3.9 Class raop:words">Class raop:words</h1>
+          <span class="anchor">
+            <a style="text-decoration: none;" href="#property_words">¶</a>
+          </span>
+        </header>
+
+        <table>
+          <tr>
+            <td><strong>Description:</strong></td>
+            <td>A RDF sequence of <a href="#class_Word">Class raop:Word</a>s</td>
+          </tr>
+          <tr>
+            <td><strong>Domain:</strong></td>
+            <td><a href="#class_Line">Class raop:Line</a></td>
+          </tr>
+          <tr>
+            <td><strong>Range:</strong></td>
+            <td>A RDF sequence of <a href="#class_Word">Class raop:Word</a>s</td>
+          </tr>
+        </table>
+      </section>
+    </spec-section>
+
 </spec-clause>
 
 <spec-clause id="references">
