@@ -1,0 +1,15 @@
+.retoSelectionHighlight {
+  background-color: #F89406;
+}
+
+.text-selected {
+  background-color: orange;
+}
+
+.reto-list {
+  list-style: none outside none;
+}
+
+.reto-btn {
+  margin-left: 2em;
+}
