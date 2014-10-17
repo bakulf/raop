@@ -69,7 +69,7 @@ var App = {
           return;
         }
 
-        // TODO send the output to download
+        self.alert(self.escape(obj.data));
       });
 
       request.fail(function(obj) {
@@ -671,6 +671,20 @@ var App = {
   error: function() {
     $('#modal-wait').modal('hide');
     alert("Something wrong happened!");
+  },
+
+  escape: function(str) {
+    var tagsToReplace = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;'
+    };
+
+    function replaceTag(tag) {
+      return tagsToReplace[tag] || tag;
+    }
+
+    return str.replace(/[&<>]/g, replaceTag);
   }
 };
 
