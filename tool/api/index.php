@@ -31,20 +31,123 @@ try {
   return;
 }
 
-/* TODO
-$foafKnows = new LibRDF_URINode("http://xmlns.com/foaf/0.1/knows");
-$foafName = new LibRDF_URINode("http://xmlns.com/foaf/0.1/name");
-$results = $model->findStatements(null, $foafKnows, null);
-foreach ($results as $result) {
-    $person1 = $result->getSubject();
-    $person2 = $result->getObject();
-    $name1 = $model->getTarget($person1, $foafName);
-    $name2 = $model->getTarget($person2, $foafName);
-    echo "$name1 knows $name2\n";
-}
-*/
+toJSON($model);
 
-echo '{ "status": "success", "data": {} }'; // TODO
+function toJSON($model) {
+  $data = Array( 'data' => Array());
+
+  $predicate = new LibRDF_URINode(RDF_BASE_URI . "type");
+  $object = new LibRDF_URINode(ROAP . "Document");
+  $results = $model->findStatements(null, $predicate, $object);
+
+  if ($results->valid()) {
+    $document = $results->current()->getSubject();
+
+    $predicate = new LibRDF_URINode(ROAP. "lines");
+    $results = $model->findStatements($document, $predicate, null);
+    if ($results->valid()) {
+      $lines = $results->current()->getObject();
+
+      $predicate = new LibRDF_URINode(RDF_BASE_URI . "type");
+      $object = new LibRDF_URINode(RDF_BASE_URI . "Seq");
+      $results = $model->findStatements($lines, $predicate, $object);
+
+      if (!$results->valid()) {
+        continue;
+      }
+
+      $counter = 1;
+      while (true) {
+        $predicate = new LibRDF_URINode(RDF_BASE_URI . "_" . $counter);
+        $results = $model->findStatements($lines, $predicate, null);
+        if (!$results->valid()) {
+          break;
+        }
+
+        $line = lineToJSON($model, $results->current()->getObject(), ++$counter);
+        if ($line) {
+          $data['data'][] = $line;
+        }
+
+        $results->next();
+      }
+    }
+  }
+
+  // TODO retos
+
+  $obj = Array( 'status' => 'success', 'data' => $data );
+  echo json_encode($obj);
+}
+
+function lineToJSON($model, $obj, $id) {
+  $predicate = new LibRDF_URINode(RDF_BASE_URI . "type");
+  $object = new LibRDF_URINode(ROAP. "Line");
+  $results = $model->findStatements($obj, $predicate, $object);
+
+  if (!$results->valid()) {
+    return null;
+  }
+
+  $line = Array('lineId' => $id, 'data' => Array());
+
+  $predicate = new LibRDF_URINode(ROAP. "words");
+  $results = $model->findStatements($obj, $predicate, null);
+
+  if ($results->valid()) {
+    $words = $results->current()->getObject();
+
+    $predicate = new LibRDF_URINode(RDF_BASE_URI . "type");
+    $object = new LibRDF_URINode(RDF_BASE_URI . "Seq");
+    $results = $model->findStatements($words, $predicate, $object);
+
+    if (!$results->valid()) {
+      return null;
+    }
+
+    $counter = 1;
+    while (true) {
+      $predicate = new LibRDF_URINode(RDF_BASE_URI . "_" . $counter);
+      $results = $model->findStatements($words, $predicate, null);
+      if (!$results->valid()) {
+        break;
+      }
+
+      $word = wordToJSON($model, $results->current()->getObject(), ++$counter);
+      if ($word) {
+        $line['data'][] = $word;
+      }
+
+      $results->next();
+    }
+  }
+
+  return $line;
+}
+
+function wordToJSON($model, $obj, $id) {
+  $predicate = new LibRDF_URINode(RDF_BASE_URI . "type");
+  $object = new LibRDF_URINode(ROAP. "Word");
+  $results = $model->findStatements($obj, $predicate, $object);
+
+  if (!$results->valid()) {
+    return null;
+  }
+
+  $predicate = new LibRDF_URINode(ROAP . 'value');
+  $results = $model->findStatements($obj, $predicate, null);
+
+  if (!$results->valid()) {
+    return null;
+  }
+
+  $obj = $results->current()->getObject();
+  if ($obj instanceof LibRDF_LiteralNode) {
+    return Array('textId' => $id, 'data' => $obj->getValue());
+  }
+
+  return null;
+}
 
 function toRDF($obj) {
   $data = json_decode($obj, true);
@@ -109,7 +212,7 @@ function toRDF($obj) {
         $model->addStatement($statement);
 
         $predicate = new LibRDF_URINode(RDF_BASE_URI ."type");
-        $object = new LibRDF_URINode(ROAP . "World");
+        $object = new LibRDF_URINode(ROAP . "Word");
         $statement = new LibRDF_Statement($wordObj, $predicate, $object);
         $model->addStatement($statement);
 
