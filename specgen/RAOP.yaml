@@ -1,0 +1,139 @@
+template: template.html
+
+vars:
+  title: "RAOP: Rethorical Annotation Ontology Project"
+  subtitle: "Editor's Draft 5 March 2015"
+  abstract: "This project aims to build a domain-specific ontology for the annotation of figures of speech, called RAOP – Rhetorical Annotation Ontology Project. RAOP will allow users to map rhetorical aspects of written and oral texts. Informed by the study of classical and modern rhetorical scholarship, this ontology, based on W3C Linked data and Semantic Web, will be a powerful model to represent the complexity of hierarchical and non-hierarchical structures such as a rhetorical system. Built in RDF, RAOP could also be expanded to all standards of Semantic Web and it could be used together with other formal ontologies already in existence such as FRBR, TEI and, CIDOC-CRM. This project is one of the possible approaches taken into consideration to digitize figures of speech by using technologies associated with Linked data and Semantic Web."
+  copyright: "Copyright &#169; 2014-2015 Andrea Marchesini and Tiziana Mancinelli"
+
+sections:
+  - name: Introduction
+    content: TODO
+
+  - name: Dependencies
+    content: "This document relies on the following specifications:\n
+              * [RDF 1.1](http://www.w3.org/TR/rdf11-concepts) is a framework for representing information in the Web\n
+              * [RDF Schema 1.1](http://www.w3.org/TR/rdf-schema/) provides a data-modelling vocabulary for RDF data. RDF Schema is an extension of the basic RDF vocabulary.\n
+              * [OWL 2](http://www.w3.org/TR/owl2-overview/), Web Ontology Language, informally OWL 2, is an ontology language for the Semantic Web with formally defined meaning."
+              # TODO add new dependences
+
+classes:
+ - name: Document
+   comment: "which is an abstraction, created by or for a community of readers – 'an abstract class defining any kinds of publishing work'"
+   equivalentClasses:
+    - name: foaf:Document
+      url: http://xmlns.com/foaf/spec/#term_Document
+
+ - name: Div
+   comment: "macro-section of the document. This class is meant to be a generic division of the document. Other classes, such as Chapter, Line, Paragraph are subclasses of the class Div and can be used to define sections of the document."
+
+ - name: Line
+   comment: "which is a subdivision of a poem, specifically a group of words arranged into a row that ends for a reason  in a specific parte of the text."
+   subclassOf: Div
+
+ - name: Paragraph
+   comment: "which represents a distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering."
+   subclassOf: Div
+
+ - name: Chapter
+   comment: "the main division of the document decided by the author."
+   subclassOf: Div
+
+ - name: Word
+   comment: "which is, at the moment, the smallest meaningful element of speech or writing."
+
+ - name: Group
+   comment: "which represents a number of items (div, lines, paragraphs or words) gathered and classed together. It is useful to define properties of rhetorical annotations."
+
+ - name: RethoricalDevice
+   label: Rethorical Device
+   comment: "Figures  of speech, or, as they are often called, rhetorical figures, are an  artful deviation1 from the ordinary manner of speaking, used in order to  impress an audience."
+
+ - name: FigureOfSpeech
+   label: Figure of Speech
+   comment: "which employ repetition – repetition of words or sounds in a specific pattern - are often used to gain attention, create an emphasis or, amplify a meaning."
+   subclassOf: RethoricalDevice
+
+ - name: FigureOfThought
+   label: Figure of Thought
+   comment: "Those rhetorical figures are a method of presenting ideas, feelings and concepts in an artful way"
+   subclassOf: RethoricalDevice
+
+ - name: Trope
+   comment: "They are a deviation from the ordinary meaning of words in their literal principal form."
+   subclassOf: RethoricalDevice
+
+ - name: FigureCategory
+   label: Category of the Figure
+   comment: ""
+
+ - name: AdditionCategory
+   label: Category Additional
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: OmissionCategory
+   label: Category Omission
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: TranspositionCategory
+   label: Category Transposition
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: PermutationCategory
+   label: Category Permutation
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: SyntacticalFigure
+   label: Syntactical Figure
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: Anaphora
+   comment: "Repetition of the same word or group of words at the beginning of successive clauses, sentences, or lines."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+
+ - name: Epanalepsis
+   comment: "Repetition of the same word or  clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+
+properties:
+ - name: divs
+   label: Has a list of Div Resources
+   comment: ""
+   domain: [ Div, Document ]
+   range: Div
+
+ - name: words
+   label: Has a list of Words
+   comment: ""
+   domain: [ Div, Line, Paragraph ]
+   range: Word
+
+ - name: value
+   label: Has a literal value
+   comment: ""
+   domain: Word
+
+ - name: item
+   label: Has a list of items
+   comment: ""
+   domain: Group
+   range: [ Group, Div, Word ]
+
+ - name: category
+   label: Has category
+   comment: ""
+   domain: RethoricalDevice
+   range: FigureCategory
+
+ - name: soundElements
+   label: Has a list of sound elements
+   comment: ""
+   domain: FigureOfSpeech
+   range: Group
