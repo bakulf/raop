@@ -1,4 +1,4 @@
-require 'rubygems'
+require 'kramdown'
 require 'yaml'
 require 'pp'
 
@@ -24,8 +24,7 @@ rescue
 end
 
 data['vars'].each do |key,value|
-  File.write "/tmp/raop.gen", value
-  output = `marked /tmp/raop.gen`
+  output = Kramdown::Document.new(value).to_html
   template.gsub! "{raop.vars.#{key}}", value
 end
 
@@ -35,9 +34,8 @@ sections_data = ""
 data['sections'].each_index do |x|
   sections_index += "<li><a href=\"#sec-#{x}\">#{data['sections'][x]['name']}</a></li>"
 
-  File.write "/tmp/raop.gen", data['sections'][x]['content']
   sections_data += "<h2 id=\"sec-#{x}\">#{x+1} #{data['sections'][x]['name']}</h2>"
-  sections_data += `marked /tmp/raop.gen`
+  sections_data += Kramdown::Document.new(data['sections'][x]['content']).to_html
 end
 
 sections_index += "<li><a href=\"#sec-cross\">RAOP cross-reference: Listing RAOP Classes and Properties</a></li>"
@@ -141,8 +139,7 @@ end
   html += "</tr></table>"
 
   if c.include? 'extra'
-    File.write "/tmp/raop.gen", c['extra']
-    html += `marked /tmp/raop.gen`
+    html += Kramdown::Document.new(c['extra']).to_html
   end
 
   html += "<p style=\"float: right; font-size: small;\">[<a href=\"#term_#{c['name']}\">#</a>] [<a href=\"#sec-0\">back to top</a>]</p>"
@@ -176,8 +173,7 @@ properties.each do |c|
   html += "</tr></table>"
 
   if c.include? 'extra'
-    File.write "/tmp/raop.gen", c['extra']
-    html += `marked /tmp/raop.gen`
+    html += Kramdown::Document.new(c['extra']).to_html
   end
 
   html += "<p style=\"float: right; font-size: small;\">[<a href=\"#term_#{c['name']}\">#</a>] [<a href=\"#sec-0\">back to top</a>]</p>"
