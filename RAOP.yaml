@@ -8,10 +8,33 @@ vars:
 
 sections:
   - name: Introduction
-    content: TODO
+    content: "The aim of this project is to provide a tool for the digitization of figures of speech by using technologies associated with Linked data and the Semantic Web. Rhetoric as the art of discourse encompass a variety of principles and strategies – figures of speech and other compositional techniques – for the construction of a persuasive speaking or writing. Since the Aristotle to the early 20th century, this discipline was mainly dedicated to train students to be eloquent in a public space. The proliferation of schools produced many tutorials, several definitions and theories that allow a variety of methods and specialism. The purpose of RAOP is to support the rhetorical and syntactical digital literary analysis together with a scholarly theoretical approach of this realm.\n\n
+              Rhetoric is a set of operations made on language necessarily dependent on certain characteristics of language: all rhetorical operations are fundamental property of linear discourse which means that a discourse can be decomposed into a smaller and smaller units. RAOP seek to create the way for the representation of complex text structures as a rhetorical figure that involves multiple co-existing, hierarchical and no-hierarchical structure of annotation.\n\n
+              A figure of speech could belong to different categories characterized and distinguished by a combination of words with similar sounds or meanings, and it has a wide range of properties that involves the structure of the phrase. Rhetoric as the art of discourse encompasses a variety of principles and strategies – figures of speech and other compositional techniques – for the construction of a persuasive speaking or writing. Since the Aristotle to the early 20th century this discipline was mainly dedicated to train students: the proliferation of schools produced many tutorials, several definitions and theories, allowing differing purposes and methods.\n\n
+              A project such as ours aims to build a system to enable the user to detect figures of speech in order to disentangle mechanisms – grammatical and stylistic rules -  that construct a discourse or the aspects of rhetoric that make communication more persuasive.In this project, we decided to take into account the categorisation found in the _Manuale di retorica_ - Garavelli's most recent Italian masterpiece."
+
+  - name: Concept
+    content: "Following Garavelli's work, the RAOP hierarchy is organised into three main branches or categories: figures of speech, figures of thought, and tropes.\n\n
+               1. _Figures of speech_ which employ repetition – _repetition_ of words or sounds in a specific pattern - are often used to gain attention, create an emphasis or, amplify a meaning. A figure of speech will include as _subclasses_ rhetorical devices belonging to this category such as, for instance, an _anaphora_. An _anaphora_ consists of repeating a sequence (_group_) of _words_ at the beginnings of sentences that are close to each other.
+
+               2. _Figures of thought_ are a method of presenting ideas, feelings and concepts in an artful way. These figures of thought do not add new meaning and provide a new shade able to influence the first meaning. For instance, a _chiasmus_, which consists of four items – words or clauses – related to each other through a reversal of structures. These rhetorical devices could be linked to another resource called a _syntactical figure_. 
+
+               3. Each of these rhetorical devices have properties or _functions_. The four categories of change – which are called _quadripartita ratio_ (Quint. _Inst._ 1.5.38) - are functions or operations governing that provide a standard means of the formation of all figures of speech are perceived as an alteration.
+
+               * addition (per _adiectionem_), by adding to the item one or more components;
+
+               * omission (per _detractionem_), by removing one or more components from a given item;
+
+               * transposition (per _transmutationem_), by changing the position of a component within the item. Also called transferring;
+
+               * permutation (per _immutationem_), by replacing one or more components of the whole iotem from outside. Immutatio is also called anthisesis.
+
+               4. _Tropes_ are a deviation from the ordinary meaning of words in their literal principal form. We are currently working on three _subclasses_ in particular: metaphor, metonymy and synecdoche. In order to support the explanation and justify the strong interpretative act needed for these rhetorical figures, the encoding includes an explanation of the meaning.\n\n
+	       This project holds that the annotation of rhetorical figures is important not only for linguistic purposes, but also for discovering different styles of writing, purpose, and styles/typologies of written documents and genres. The study of rhetoric allows us to comprehensively analyse how language is used, looking at its emotional impact as much as its propositional content."
+
 
   - name: Dependencies
-    content: "This document relies on the following specifications:\n
+    content: "This document relies on the following specifications:\n\n
               * [RDF 1.1](http://www.w3.org/TR/rdf11-concepts) is a framework for representing information in the Web\n
               * [RDF Schema 1.1](http://www.w3.org/TR/rdf-schema/) provides a data-modelling vocabulary for RDF data. RDF Schema is an extension of the basic RDF vocabulary.\n
               * [OWL 2](http://www.w3.org/TR/owl2-overview/), Web Ontology Language, informally OWL 2, is an ontology language for the Semantic Web with formally defined meaning."

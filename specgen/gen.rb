@@ -24,8 +24,7 @@ rescue
 end
 
 data['vars'].each do |key,value|
-  output = Kramdown::Document.new(value).to_html
-  template.gsub! "{raop.vars.#{key}}", value
+  template.gsub! "{raop.vars.#{key}}", Kramdown::Document.new(value).to_html
 end
 
 sections_index = ""
