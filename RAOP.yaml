@@ -47,26 +47,11 @@ classes:
     - name: foaf:Document
       url: http://xmlns.com/foaf/spec/#term_Document
 
- - name: Div
-   comment: "macro-section of the document. This class is meant to be a generic division of the document. Other classes, such as Chapter, Line, Paragraph are subclasses of the class Div and can be used to define sections of the document."
-
- - name: Line
-   comment: "which is a subdivision of a poem, specifically a group of words arranged into a row that ends for a reason  in a specific parte of the text."
-   subclassOf: Div
-
- - name: Paragraph
-   comment: "which represents a distinct section of a piece of writing, usually dealing with a single theme and indicated by a new line, indentation, or numbering."
-   subclassOf: Div
-
- - name: Chapter
-   comment: "the main division of the document decided by the author."
-   subclassOf: Div
-
  - name: Word
    comment: "which is, at the moment, the smallest meaningful element of speech or writing."
 
  - name: Group
-   comment: "which represents a number of items (div, lines, paragraphs or words) gathered and classed together. It is useful to define properties of rhetorical annotations."
+   comment: "which represents a number of items (group or words) gathered and classed together. It is useful to define properties of rhetorical annotations."
 
  - name: RethoricalDevice
    label: Rethorical Device
@@ -126,18 +111,6 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
 
 properties:
- - name: divs
-   label: Has a list of Div Resources
-   comment: ""
-   domain: [ Div, Document ]
-   range: Div
-
- - name: words
-   label: Has a list of Words
-   comment: ""
-   domain: [ Div, Line, Paragraph ]
-   range: Word
-
  - name: value
    label: Has a literal value
    comment: ""
@@ -147,7 +120,7 @@ properties:
    label: Has a list of items
    comment: ""
    domain: Group
-   range: [ Group, Div, Word ]
+   range: [ Group, Word ]
 
  - name: category
    label: Has category
