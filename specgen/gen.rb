@@ -25,6 +25,7 @@ end
 
 data['vars'].each do |key,value|
   template.gsub! "{raop.vars.#{key}}", Kramdown::Document.new(value).to_html
+  template.gsub! "{raop.vars.#{key} nomarkdown}", value
 end
 
 sections_index = ""
