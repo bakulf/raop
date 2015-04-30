@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:raop="http://bakulf.github.io/raop/">
-  <raop:Word rdf:nodeID="w1" raop:value="This" /><!-- royal throne of kings, this sceptred isle, -->
-  <raop:Word rdf:nodeID="w2" raop:value="This" /><!-- earth of majesty, this seat of Mars, -->
-  <raop:Word rdf:nodeID="w3" raop:value="This" /><!-- other Eden, demi-paradise, -->
-  <raop:Word rdf:nodeID="w4" raop:value="This" /><!-- fortress built by Nature for herself -->
   <raop:Anaphora>
     <raop:soundElements>
       <rdf:Seq>
-        <rdf:li rdf:nodeID="w1" />
-        <rdf:li rdf:nodeID="w2" />
-        <rdf:li rdf:nodeID="w3" />
-        <rdf:li rdf:nodeID="w4" />
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This royal throne of kings, this sceptred isle, -->
+        </rdf:li>
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This earth of majesty, this seat of Mars, -->
+        </rdf:li>
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This other Eden, demi-paradise, -->
+        </rdf:li>
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This fortress built by Nature for herself -->
+        </rdf:li>
       </rdf:Seq>
     </raop:soundElements>
   </raop:Anaphora>

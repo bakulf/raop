@@ -147,8 +147,6 @@ classes.each do |c|
     html += Kramdown::Document.new(c['extra']).to_html
   end
 
-  html += "<p style=\"float: right; font-size: small;\">[<a href=\"#term_#{c['name']}\">#</a>] [<a href=\"#sec-0\">back to top</a>]</p>"
-
   if c.include? 'example' and File.exists? c['example']
     file = File.read c['example']
 
@@ -157,6 +155,7 @@ classes.each do |c|
     html += '</pre></div>'
   end
 
+  html += "<p style=\"float: right; font-size: small;\">[<a href=\"#term_#{c['name']}\">#</a>] [<a href=\"#sec-0\">back to top</a>]</p>"
   html += "<br /></div><br />"
 end
 
