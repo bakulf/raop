@@ -2,6 +2,35 @@ require 'kramdown'
 require 'yaml'
 require 'pp'
 
+def find_classes(what, classes)
+  what = [what] if not what.is_a?(Array)
+
+  list = []
+  what.each do |sc|
+    found = nil
+    classes.each do |cc|
+      if sc == cc['name']
+        found = cc
+        break
+      end
+    end
+
+    if found.nil?
+      puts "Class #{sc} doesn't exist."
+      exit
+    end
+
+    list.push  "<a href=\"#term_#{found['name']}\">#{found['name']}</a>"
+  end
+
+  return "| #{list.join(" | ")} |"
+end
+
+def escape(str)
+  return str.gsub('<', '&lt;')
+            .gsub('>', '&gt;')
+end
+
 begin
   data = YAML.load_file ARGV[0]
 rescue
@@ -96,30 +125,6 @@ classes.each do |c|
 
   html += "<tr><th>Properties include:</th><td>| #{list.join(" | ")} |</td></tr>" if not list.empty?
 
-def find_classes(what, classes)
-  what = [what] if not what.is_a?(Array)
-
-  list = []
-  what.each do |sc|
-    found = nil
-    classes.each do |cc|
-      if sc == cc['name']
-        found = cc
-        break
-      end
-    end
-
-    if found.nil?
-      puts "Class #{sc} doesn't exist."
-      exit
-    end
-
-    list.push  "<a href=\"#term_#{found['name']}\">#{found['name']}</a>"
-  end
-
-  return "| #{list.join(" | ")} |"
-end
-
   if c.include? 'subclassOf'
     html += "<tr><th>Subclass Of:</th><td>#{find_classes(c['subclassOf'], classes)}</td></tr>"
   end
@@ -143,6 +148,15 @@ end
   end
 
   html += "<p style=\"float: right; font-size: small;\">[<a href=\"#term_#{c['name']}\">#</a>] [<a href=\"#sec-0\">back to top</a>]</p>"
+
+  if c.include? 'example' and File.exists? c['example']
+    file = File.read c['example']
+
+    html += '<br /><div class="example"><pre>'
+    html += escape(file)
+    html += '</pre></div>'
+  end
+
   html += "<br /></div><br />"
 end
 
