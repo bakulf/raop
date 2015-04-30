@@ -110,6 +110,7 @@ classes:
    comment: "Repetition of the same word or  clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/epanalepsis.rdf'
 
 properties:
  - name: value
