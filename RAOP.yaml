@@ -106,11 +106,59 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    example: '../examples/anaphora.rdf'
 
+ - name: Epistrophe
+   comment: "Ending a series of lines, phrases, clauses, or sentences with the same word or words."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/epistrophe.rdf'
+
  - name: Epanalepsis
-   comment: "Repetition of the same word or  clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause."
+   comment: "Repetition of the same word or clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    example: '../examples/epanalepsis.rdf'
+
+ - name: Polysyndeton
+   comment: ""
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Assonance
+   comment: "Repetition of similar vowel sounds, preceded and followed by different consonants, in the stressed syllables of adjacent words."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Alliteration
+   comment: "Repetition of the same letter or sound within nearby words. Most often, repeated initial consonants.\n\nNote: The term \"alliteratio\" was coined by Giovanni Pontano in 1519 as a further specification of the term annominatio. Current usage of this term is in its most restricted sense (repeated initial consonants), aligning it with the vice known as homoeoprophoron or paroemion."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Onomatopoeia
+   comment: "Using or inventing a word whose sound imitates that which it names (the union of phonetics and semantics)."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Paronomasia
+   comment: "Using words that sound alike but that differ in meaning (punning).  The Ad Herennium author further specifies that this is brought about through various kinds of metaplasm."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Polyptoton
+   comment: "Repeating a word, but in a different form. Using a cognate of a given word in close proximity."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Rhyme
+   comment: "Correspondence of sound between words or the endings of words, especially when these are used at the ends of lines of poetry."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
 
 properties:
  - name: value
