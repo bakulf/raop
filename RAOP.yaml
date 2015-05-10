@@ -2,7 +2,7 @@ template: template.html
 
 vars:
   title: "RAOP: Rethorical Annotation Ontology Project"
-  subtitle: "Editor's Draft 5 March 2015"
+  subtitle: "Editor's Draft"
   abstract: "This project aims to build a domain-specific ontology for the annotation of figures of speech, called RAOP – Rhetorical Annotation Ontology Project. RAOP will allow users to map rhetorical aspects of written and oral texts. Informed by the study of classical and modern rhetorical scholarship, this ontology, based on W3C Linked data and Semantic Web, will be a powerful model to represent the complexity of hierarchical and non-hierarchical structures such as a rhetorical system. Built in RDF, RAOP could also be expanded to all standards of Semantic Web and it could be used together with other formal ontologies already in existence such as FRBR, TEI and, CIDOC-CRM. This project is one of the possible approaches taken into consideration to digitize figures of speech by using technologies associated with Linked data and Semantic Web."
   copyright: "Copyright &#169; 2014-2015 Andrea Marchesini and Tiziana Mancinelli"
 
