@@ -5,18 +5,18 @@
     <raop:soundElements>
       <rdf:Seq>
         <rdf:li> 
-          <raop:Group><raop:item><rdf:Seq>
+          <raop:Group><raop:items><rdf:Seq>
             <rdf:li><raop:Word raop:value="times" /></rdf:li>
             <rdf:li><raop:Word raop:value="like" /></rdf:li>
             <rdf:li><raop:Word raop:value="these" /></rdf:li>
-          </rdf:Seq></raop:item></raop:Group>
+          </rdf:Seq></raop:items></raop:Group>
         </rdf:li> 
         <rdf:li> 
-          <raop:Group><raop:item><rdf:Seq>
+          <raop:Group><raop:items><rdf:Seq>
             <rdf:li><raop:Word raop:value="times" /></rdf:li>
             <rdf:li><raop:Word raop:value="like" /></rdf:li>
             <rdf:li><raop:Word raop:value="these" /></rdf:li>
-          </rdf:Seq></raop:item></raop:Group>
+          </rdf:Seq></raop:items></raop:Group>
         </rdf:li>
       </rdf:Seq>
     </raop:soundElements>

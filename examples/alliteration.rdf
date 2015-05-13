@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:raop="http://bakulf.github.io/raop/">
+  <!-- Why not waste a wild weekend at Westmore Water Park? -->
+  <raop:Word raop:value="waste">
+    <raop:syllables><rdf:Seq>
+      <rdf:li><raop:Syllable raop:value="wa" rdf:nodeID="waste_wa" /></rdf:li>
+      <rdf:li><raop:Syllable raop:value="ste" /></rdf:li>
+    </rdf:Seq></raop:syllables>
+  </raop:Word>
+  <raop:Word raop:value="wild">
+    <raop:phonemes><rdf:Seq>
+      <rdf:li><raop:Phoneme raop:value="wʌ" rdf:nodeID="wild_wʌ" /></rdf:li>
+      <rdf:li><raop:Phoneme raop:value="ɪ" /></rdf:li>
+      <rdf:li><raop:Phoneme raop:value="ld" /></rdf:li>
+    </rdf:Seq></raop:phonemes>
+  </raop:Word>
+  <raop:Word raop:value="weekend">
+    <raop:phonemes><rdf:Seq>
+      <rdf:li><raop:Phoneme raop:value="w" rdf:nodeID="weekend_w" /></rdf:li>
+      <!-- ... -->
+    </rdf:Seq></raop:phonemes>
+  </raop:Word>
+  <raop:Word raop:value="westmore">
+    <raop:phonemes><rdf:Seq>
+      <rdf:li><raop:Phoneme raop:value="w" rdf:nodeID="westmore_w" /></rdf:li>
+      <!-- ... -->
+    </rdf:Seq></raop:phonemes>
+  </raop:Word>
+  <raop:Word raop:value="water">
+    <raop:phonemes><rdf:Seq>
+      <rdf:li><raop:Phoneme raop:value="w" rdf:nodeID="water_w" /></rdf:li>
+      <!-- ... -->
+    </rdf:Seq></raop:phonemes>
+  </raop:Word>
+  <raop:Alliteration>
+    <raop:soundElements>
+      <rdf:Seq>
+        <rdf:li>
+          <raop:Word raop:value="Why" />
+        </rdf:li>
+        <rdf:li rdf:nodeID="waste_wa" />
+        <rdf:li rdf:nodeID="wild_wʌ" />
+        <rdf:li rdf:nodeID="weekend_w" />
+        <rdf:li rdf:nodeID="westmore_w" />
+        <rdf:li rdf:nodeID="water_w" />
+      </rdf:Seq>
+    </raop:soundElements>
+  </raop:Alliteration>
+</rdf:RDF>

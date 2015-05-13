@@ -51,7 +51,13 @@ classes:
    comment: "which is, at the moment, the smallest meaningful element of speech or writing."
 
  - name: Group
-   comment: "which represents a number of items (group or words) gathered and classed together. It is useful to define properties of rhetorical annotations."
+   comment: "which represents a number of items (groups, words, phonemes, syllables) gathered and classed together. It is useful to define properties of rhetorical annotations."
+
+ - name: Phoneme
+   comment: "Any of the perceptually distinct units of sound in a specified language that distinguish one word from another."
+
+ - name: Syllable
+   comment: "A unit of pronunciation having one vowel sound, with or without surrounding consonants, forming the whole or a part of a word."
 
  - name: RethoricalDevice
    label: Rethorical Device
@@ -134,7 +140,7 @@ classes:
    comment: "Repetition of the same letter or sound within nearby words. Most often, repeated initial consonants.\n\nNote: The term \"alliteratio\" was coined by Giovanni Pontano in 1519 as a further specification of the term annominatio. Current usage of this term is in its most restricted sense (repeated initial consonants), aligning it with the vice known as homoeoprophoron or paroemion."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
-   # TODO example: '../examples/epanalepsis.rdf'
+   example: '../examples/alliteration.rdf'
 
  - name: Onomatopoeia
    comment: "Using or inventing a word whose sound imitates that which it names (the union of phonetics and semantics)."
@@ -164,13 +170,23 @@ properties:
  - name: value
    label: Has a literal value
    comment: ""
-   domain: Word
+   domain: [ Word, Phoneme, Syllable ]
 
- - name: item
+ - name: syllables
+   label: Has a list of syllables
+   comment: ""
+   domain: [ Word ]
+
+ - name: phonemes
+   label: Has a list of phonemes
+   comment: ""
+   domain: [ Word ]
+
+ - name: items
    label: Has a list of items
    comment: ""
    domain: Group
-   range: [ Group, Word ]
+   range: [ Group, Word, Phoneme, Syllable ]
 
  - name: category
    label: Has category
@@ -182,4 +198,4 @@ properties:
    label: Has a list of sound elements
    comment: ""
    domain: FigureOfSpeech
-   range: Group
+   range: [ Group, Word, Phoneme, Syllable ]
