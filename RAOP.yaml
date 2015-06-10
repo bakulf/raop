@@ -17,7 +17,7 @@ sections:
     content: "Following Garavelli's work, the RAOP hierarchy is organised into three main branches or categories: figures of speech, figures of thought, and tropes.\n\n
                1. _Figures of speech_ which employ repetition – _repetition_ of words or sounds in a specific pattern - are often used to gain attention, create an emphasis or, amplify a meaning. A figure of speech will include as _subclasses_ rhetorical devices belonging to this category such as, for instance, an _anaphora_. An _anaphora_ consists of repeating a sequence (_group_) of _words_ at the beginnings of sentences that are close to each other.
 
-               2. _Figures of thought_ are a method of presenting ideas, feelings and concepts in an artful way. These figures of thought do not add new meaning and provide a new shade able to influence the first meaning. For instance, a _chiasmus_, which consists of four items – words or clauses – related to each other through a reversal of structures. These rhetorical devices could be linked to another resource called a _syntactical figure_. 
+               2. _Figures of thought_ are a method of presenting ideas, feelings and concepts in an artful way. These figures of thought do not add new meaning and provide a new shade able to influence the first meaning. For instance, a _chiasmus_, which consists of four items – words or clauses – related to each other through a reversal of structures. These rhetorical devices could be linked to another resource called a _syntactical figure_.
 
                3. Each of these rhetorical devices have properties or _functions_. The four categories of change – which are called _quadripartita ratio_ (Quint. _Inst._ 1.5.38) - are functions or operations governing that provide a standard means of the formation of all figures of speech are perceived as an alteration.
 
@@ -166,6 +166,26 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
 
+ - name: Metaphor
+   comment: "A comparison made by referring to one thing as another."
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/metaphor.rdf'
+
+ - name: Metonymy
+   comment: "Reference to something or someone by naming one of its attributes."
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/metonymy.rdf'
+
+ - name: Synecdoche
+   comment: "A whole is represented by naming one of its parts (genus named for species), or vice versa (species named for genus)."
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/synecdoche.rdf'
+
+ - name: Simile
+   comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/simile.rdf'
+
 properties:
  - name: value
    label: Has a literal value
@@ -199,3 +219,24 @@ properties:
    comment: ""
    domain: FigureOfSpeech
    range: [ Group, Word, Phoneme, Syllable ]
+
+ - name: interpretation
+   label: The interpretation of this rethorical device
+   comment: ""
+   domain: [ Metaphor, Metonymy, Synecdoche, Simile ]
+
+ - name: comparison
+   label: Estimate similarities between two resources
+   comment: ""
+   domain: [ Simile, Metaphor ]
+
+ - name: subject
+   label: The subject
+   comment: ""
+   domain: [ Simile, Metaphor ]
+
+ - name: sentence
+   label: The sentence of the rethorical device
+   comment: ""
+   domain: [ Metaphor, Metonymy, Synecdoche, Simile ]
+   range: Group
