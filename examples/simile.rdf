@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:raop="http://bakulf.github.io/raop/">
-<raop:Methaphor>
+<raop:Simile>
      <raop:comparison rdf:nodeID="nuvole"/>
      <raop:interpretation>leggiadri e veloci come cavalli</raop:interpretation>
      <raop:subject rdf:nodeID="cavalli"/>
@@ -20,6 +20,6 @@
       </raop:items>
     </raop:Group>
   </raop:sentence> 
-</raop:Methaphor>
+</raop:Simile>
 
 </rdf:RDF>
