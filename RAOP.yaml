@@ -169,7 +169,7 @@ classes:
  - name: Metaphor
    comment: "A comparison made by referring to one thing as another."
    subclassOf: [ RethoricalDevice, Trope ]
-   example: '../examples/metaphor.rdf'
+   #example: '../examples/metaphor.rdf'
 
  - name: Metonymy
    comment: "Reference to something or someone by naming one of its attributes."
@@ -184,7 +184,7 @@ classes:
  - name: Simile
    comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
    subclassOf: [ RethoricalDevice, Trope ]
-   # TODO example: '../examples/simile.rdf'
+   example: '../examples/simile.rdf'
 
 properties:
  - name: value
