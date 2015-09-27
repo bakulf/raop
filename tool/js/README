@@ -1,0 +1,184 @@
+. mappatura Testo
+.. doc - documento. Da mappare in qualche modo rispetto a TEI e altre cose
+   * haRigo
+.. rigo - insieme di parole ordinate
+   * haParola
+.. parola
+
+.. gruppo (di parole o rigo o di gruppi) - ordinato
+
+. figura retorica
+.. figura di parola  
+... anafora
+    * haElementi (che e' un gruppo o una parola)
+... apanalessi
+    * haElementi (che e' un gruppo o una parola)
+
+ Le figure retoriche
+
+Il testo viene diviso in elementi sintagmatici e singole parole.
+La retorica è lo studio della configurazione del discorso affiancata all'organizzazione del pensiero. Possono essere divise tre categorie:
+
+1. Figure di parola: 
+questa tipologia può basarsi su una ripetizione del suono o di una parola (figure di suono; ad es., l'allitterazione) o su una disposizione particolare della frase (figure sintattiche; ad es., il chiasmo).
+
+- PER AGGIUNZIONE
+
+	Anafora: Consiste nel ripetere le stesse parole o lettere all'inizio o all'interno di un verso (o di una frase), ma anche una ripetizione di due o più parole successive legate dal senso.
+
+Proprietà: uno o più elementi (parola o sintagma) in ordine di continuità.
+
+	Es: “sul buio proscenio di Via Bixio,/buio ma rotto da lanternine”.
+
+Epifora: consiste nella ripetizione di una parola alla fine di frasi o versi successivi
+
+Proprietà: ripetizione di una o più elementi (parole e sintagmi) in ordine di continuità.
+
+Es: 
+“il muro, il muro che non c'è.
+
+Sono i rumori del mattino, i distanziati rumori
+
+della giornata agricola - in via
+
+di porsi in marcia - a rivelargli che sta a casa sua, dentro
+
+una stanza inondata a metà dal sole
+
+vivo ma presago
+
+un sole che occupa senza scampo il letto
+
+sfatto del fratello, del fratello
+
+che non c'è.
+
+Epanalessi: raddoppiamento di un'espressione, ripetuta all'inizio, o al centro, o alla fine di un segmento testuale.
+
+Uno o più elementi (parole o sintagmi) in ordine di continuità. 
+
+Es: “durò, durò oltre i cancelli bruni/dell'autunno, le imposte soleggiate/d'un inverno sfacentesi su viole/nate troppo presto, oltre gli occhi/assopiti fra primavera e estate”.
+
+Polisindeto: collegamento di varie frasi di un periodo mediante una congiunzione ripetuta più volte. 
+
+Proprietà: Una congiunzione ripetuta e più parole o sintagmi collegati.
+
+Es:  “e spruzzandosi e ridendo e tremando”
+
+- PER SOPPRESSIONE
+
+	Asindeto: Assenza di congiunzioni coordinanti.
+
+Proprietà: consecuzione di parole o sintagmi.
+
+Es: la nonna ora guarda e riprova 
+dalle persiane socchiuse, tremando 
+nel calore, protettrice implacabile, 
+un tempo cara, ardente fondatrice
+della fortuna famigliare destinata 
+a un maschio tentato oggi prima del tempo. 
+
+- PER SOSTITUZIONE
+
+	Anastrofe: inversione di due parole rispetto all'ordine consueto.
+
+Proprietà: sintagmi o parole sconnesse e separate.
+
+Es.: Eppure il padre di tanti figli - ma come,
+
+in due stanze, la cucina a pianterreno e sopra
+
+quella per dormirvi, in castagno
+
+la scaletta ripida e il soffitto-pavimento,
+
+lui, la minuta moglie Dina, il più grande
+
+dei maschi che s'impiccò in età militare,
+
+le figlie belle, presto
+
+volate via alla Spezia non lontana
+
+appena fiorite in rosse guance le loro adolescenze sventate,
+
+al modo delle pomacre succose al morso d'autunno; e i fratelli minori,
+
+i ragazzetti docili nel governare un bestiame
+
+la cui stalla è più spaziosa della loro dimora
+
+e il sesso più dolce d'ogni altra cosa? - eppure
+
+2. Figure di pensiero: 
+consiste nel modo in cui viene espresso un'idea. 
+
+PER AGGIUNZIONE:
+
+	Ossimoro: consiste nel porre nella stessa locuzione parole che esprimono concetti contrari.
+
+Proprietà: due elementi contrastanti per significato.
+
+Es.: Tenebrore accecante
+
+	Similitudine: il poeta, anziché descrivere direttamente un oggetto, una persona, una qualità, li presenta paragonandoli a un oggetto, a una persona, a una qualità cui quelli somigliano.
+
+Proprietà: due termini di paragone collegati con l'avverbio 'come'.
+
+Chiasmo: consiste nell’accostamento di due elementi concettualmente paralleli, in modo però che i termini del secondo siano disposti nell’ordine inverso a quelli del primo.
+
+Proprietà: quattro elementi disposti in ordine opposto.
+
+Es.:  i loro occhi deboli, / i loro deboli cuori
+
+PER SOPPRESSIONE:
+
+	Aposiopesi: consiste nell’improvvisa interruzione di un messaggio con la soppressione di una sua parte o nell’allusione diretta a qualcosa che viene taciuto. 
+
+Proprietà: Espressa con la punteggiatura - puntini di sospensione. 
+
+Es: “ai tre figli premorti, sepolti nei cimitero extraurbano
+di Marore non più visitato da anni...
+..................................................”
+
+
+PER SOSTITUZIONE:
+
+	Interrogazione:
+
+Proprietà: Espressa con un'interrogativa diretta o indiretta.
+
+
+3. Figure di significato / tropi
+
+	Metafora: è spesso definita come una similitudine abbreviata; in essa il poeta, anziché fare un paragone tra due immagini, presenta un’immagine sola, ossia usa, al posto di una parola, un’altra che ha con essa un rapporto di somiglianza
+
+Proprietà: sostituzione di un termine o una frase con il significato attribuitogli dall'autore.
+ 
+Es:
+
+	Sineddoche: Sostituzione di un termine con un altro che ha con il primo rapporto di quantità. 
+
+Proprietà: ostituzione di un termine o una frase con il significato attribuitogli dall'autore.
+ 
+Es: lo stivaletto elegante e crudele
+
+	Metonimia: Sostituzione di un termine con un altro che ha con il primo un rapporto di continuità logica. Si può sostituire 
+
+Proprietà: sostituzione di un termine con il significato attribuitogli dall'autore.
+ 
+Es: la tesi che lei prepara su Catullo
+
+
+
+
+Le figure di pensiero e di parole vengono raggruppate anche in una categoria chiamata 'figure sintattiche':
+
+Chiasmo
+Anafora 
+Epifora
+Anafora
+Epanalessi
+
+
+

@@ -1,0 +1,242 @@
+template: template.html
+
+vars:
+  title: "RAOP: Rethorical Annotation Ontology Project"
+  subtitle: "Editor's Draft"
+  abstract: "This project aims to build a domain-specific ontology for the annotation of figures of speech, called RAOP – Rhetorical Annotation Ontology Project. RAOP will allow users to map rhetorical aspects of written and oral texts. Informed by the study of classical and modern rhetorical scholarship, this ontology, based on W3C Linked data and Semantic Web, will be a powerful model to represent the complexity of hierarchical and non-hierarchical structures such as a rhetorical system. Built in RDF, RAOP could also be expanded to all standards of Semantic Web and it could be used together with other formal ontologies already in existence such as FRBR, TEI and, CIDOC-CRM. This project is one of the possible approaches taken into consideration to digitize figures of speech by using technologies associated with Linked data and Semantic Web."
+  copyright: "Copyright &#169; 2014-2015 Andrea Marchesini and Tiziana Mancinelli"
+
+sections:
+  - name: Introduction
+    content: "The aim of this project is to provide a tool for the digitization of figures of speech by using technologies associated with Linked data and the Semantic Web. Rhetoric as the art of discourse encompass a variety of principles and strategies – figures of speech and other compositional techniques – for the construction of a persuasive speaking or writing. Since the Aristotle to the early 20th century, this discipline was mainly dedicated to train students to be eloquent in a public space. The proliferation of schools produced many tutorials, several definitions and theories that allow a variety of methods and specialism. The purpose of RAOP is to support the rhetorical and syntactical digital literary analysis together with a scholarly theoretical approach of this realm.\n\n
+              Rhetoric is a set of operations made on language necessarily dependent on certain characteristics of language: all rhetorical operations are fundamental property of linear discourse which means that a discourse can be decomposed into a smaller and smaller units. RAOP seek to create the way for the representation of complex text structures as a rhetorical figure that involves multiple co-existing, hierarchical and no-hierarchical structure of annotation.\n\n
+              A figure of speech could belong to different categories characterized and distinguished by a combination of words with similar sounds or meanings, and it has a wide range of properties that involves the structure of the phrase. Rhetoric as the art of discourse encompasses a variety of principles and strategies – figures of speech and other compositional techniques – for the construction of a persuasive speaking or writing. Since the Aristotle to the early 20th century this discipline was mainly dedicated to train students: the proliferation of schools produced many tutorials, several definitions and theories, allowing differing purposes and methods.\n\n
+              A project such as ours aims to build a system to enable the user to detect figures of speech in order to disentangle mechanisms – grammatical and stylistic rules -  that construct a discourse or the aspects of rhetoric that make communication more persuasive.In this project, we decided to take into account the categorisation found in the _Manuale di retorica_ - Garavelli's most recent Italian masterpiece."
+
+  - name: Concept
+    content: "Following Garavelli's work, the RAOP hierarchy is organised into three main branches or categories: figures of speech, figures of thought, and tropes.\n\n
+               1. _Figures of speech_ which employ repetition – _repetition_ of words or sounds in a specific pattern - are often used to gain attention, create an emphasis or, amplify a meaning. A figure of speech will include as _subclasses_ rhetorical devices belonging to this category such as, for instance, an _anaphora_. An _anaphora_ consists of repeating a sequence (_group_) of _words_ at the beginnings of sentences that are close to each other.
+
+               2. _Figures of thought_ are a method of presenting ideas, feelings and concepts in an artful way. These figures of thought do not add new meaning and provide a new shade able to influence the first meaning. For instance, a _chiasmus_, which consists of four items – words or clauses – related to each other through a reversal of structures. These rhetorical devices could be linked to another resource called a _syntactical figure_.
+
+               3. Each of these rhetorical devices have properties or _functions_. The four categories of change – which are called _quadripartita ratio_ (Quint. _Inst._ 1.5.38) - are functions or operations governing that provide a standard means of the formation of all figures of speech are perceived as an alteration.
+
+               * addition (per _adiectionem_), by adding to the item one or more components;
+
+               * omission (per _detractionem_), by removing one or more components from a given item;
+
+               * transposition (per _transmutationem_), by changing the position of a component within the item. Also called transferring;
+
+               * permutation (per _immutationem_), by replacing one or more components of the whole iotem from outside. Immutatio is also called anthisesis.
+
+               4. _Tropes_ are a deviation from the ordinary meaning of words in their literal principal form. We are currently working on three _subclasses_ in particular: metaphor, metonymy and synecdoche. In order to support the explanation and justify the strong interpretative act needed for these rhetorical figures, the encoding includes an explanation of the meaning.\n\n
+	       This project holds that the annotation of rhetorical figures is important not only for linguistic purposes, but also for discovering different styles of writing, purpose, and styles/typologies of written documents and genres. The study of rhetoric allows us to comprehensively analyse how language is used, looking at its emotional impact as much as its propositional content."
+
+
+  - name: Dependencies
+    content: "This document relies on the following specifications:\n\n
+              * [RDF 1.1](http://www.w3.org/TR/rdf11-concepts) is a framework for representing information in the Web\n
+              * [RDF Schema 1.1](http://www.w3.org/TR/rdf-schema/) provides a data-modelling vocabulary for RDF data. RDF Schema is an extension of the basic RDF vocabulary.\n
+              * [OWL 2](http://www.w3.org/TR/owl2-overview/), Web Ontology Language, informally OWL 2, is an ontology language for the Semantic Web with formally defined meaning."
+              # TODO add new dependences
+
+classes:
+ - name: Document
+   comment: "which is an abstraction, created by or for a community of readers – 'an abstract class defining any kinds of publishing work'"
+   equivalentClasses:
+    - name: foaf:Document
+      url: http://xmlns.com/foaf/spec/#term_Document
+
+ - name: Word
+   comment: "which is, at the moment, the smallest meaningful element of speech or writing."
+
+ - name: Group
+   comment: "which represents a number of items (groups, words, phonemes, syllables) gathered and classed together. It is useful to define properties of rhetorical annotations."
+
+ - name: Phoneme
+   comment: "Any of the perceptually distinct units of sound in a specified language that distinguish one word from another."
+
+ - name: Syllable
+   comment: "A unit of pronunciation having one vowel sound, with or without surrounding consonants, forming the whole or a part of a word."
+
+ - name: RethoricalDevice
+   label: Rethorical Device
+   comment: "Figures  of speech, or, as they are often called, rhetorical figures, are an  artful deviation1 from the ordinary manner of speaking, used in order to  impress an audience."
+
+ - name: FigureOfSpeech
+   label: Figure of Speech
+   comment: "which employ repetition – repetition of words or sounds in a specific pattern - are often used to gain attention, create an emphasis or, amplify a meaning."
+   subclassOf: RethoricalDevice
+
+ - name: FigureOfThought
+   label: Figure of Thought
+   comment: "Those rhetorical figures are a method of presenting ideas, feelings and concepts in an artful way"
+   subclassOf: RethoricalDevice
+
+ - name: Trope
+   comment: "They are a deviation from the ordinary meaning of words in their literal principal form."
+   subclassOf: RethoricalDevice
+
+ - name: FigureCategory
+   label: Category of the Figure
+   comment: ""
+
+ - name: AdditionCategory
+   label: Category Additional
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: OmissionCategory
+   label: Category Omission
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: TranspositionCategory
+   label: Category Transposition
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: PermutationCategory
+   label: Category Permutation
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: SyntacticalFigure
+   label: Syntactical Figure
+   comment: ""
+   subclassOf: FigureCategory
+
+ - name: Anaphora
+   comment: "Repetition of the same word or group of words at the beginning of successive clauses, sentences, or lines."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/anaphora.rdf'
+
+ - name: Epistrophe
+   comment: "Ending a series of lines, phrases, clauses, or sentences with the same word or words."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/epistrophe.rdf'
+
+ - name: Epanalepsis
+   comment: "Repetition of the same word or clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/epanalepsis.rdf'
+
+ - name: Polysyndeton
+   comment: ""
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Assonance
+   comment: "Repetition of similar vowel sounds, preceded and followed by different consonants, in the stressed syllables of adjacent words."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Alliteration
+   comment: "Repetition of the same letter or sound within nearby words. Most often, repeated initial consonants.\n\nNote: The term \"alliteratio\" was coined by Giovanni Pontano in 1519 as a further specification of the term annominatio. Current usage of this term is in its most restricted sense (repeated initial consonants), aligning it with the vice known as homoeoprophoron or paroemion."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/alliteration.rdf'
+
+ - name: Onomatopoeia
+   comment: "Using or inventing a word whose sound imitates that which it names (the union of phonetics and semantics)."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Paronomasia
+   comment: "Using words that sound alike but that differ in meaning (punning).  The Ad Herennium author further specifies that this is brought about through various kinds of metaplasm."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Polyptoton
+   comment: "Repeating a word, but in a different form. Using a cognate of a given word in close proximity."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Rhyme
+   comment: "Correspondence of sound between words or the endings of words, especially when these are used at the ends of lines of poetry."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
+
+ - name: Metaphor
+   comment: "A comparison made by referring to one thing as another."
+   subclassOf: [ RethoricalDevice, Trope ]
+   example: '../examples/metaphor.rdf'
+
+ - name: Metonymy
+   comment: "Reference to something or someone by naming one of its attributes."
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/metonymy.rdf'
+
+ - name: Synecdoche
+   comment: "A whole is represented by naming one of its parts (genus named for species), or vice versa (species named for genus)."
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/synecdoche.rdf'
+
+ - name: Simile
+   comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/simile.rdf'
+
+properties:
+ - name: value
+   label: Has a literal value
+   comment: ""
+   domain: [ Word, Phoneme, Syllable ]
+
+ - name: syllables
+   label: Has a list of syllables
+   comment: ""
+   domain: [ Word ]
+
+ - name: phonemes
+   label: Has a list of phonemes
+   comment: ""
+   domain: [ Word ]
+
+ - name: items
+   label: Has a list of items
+   comment: ""
+   domain: Group
+   range: [ Group, Word, Phoneme, Syllable ]
+
+ - name: category
+   label: Has category
+   comment: ""
+   domain: RethoricalDevice
+   range: FigureCategory
+
+ - name: soundElements
+   label: Has a list of sound elements
+   comment: ""
+   domain: FigureOfSpeech
+   range: [ Group, Word, Phoneme, Syllable ]
+
+ - name: interpretation
+   label: The interpretation of this rethorical device
+   comment: ""
+   domain: [ Metaphor, Metonymy, Synecdoche, Simile ]
+
+ - name: comparison
+   label: Estimate similarities between two resources
+   comment: ""
+   domain: [ Simile, Metaphor ]
+
+ - name: subject
+   label: The subject
+   comment: ""
+   domain: [ Simile, Metaphor ]
+
+ - name: sentence
+   label: The sentence of the rethorical device
+   comment: ""
+   domain: [ Metaphor, Metonymy, Synecdoche, Simile ]
+   range: Group

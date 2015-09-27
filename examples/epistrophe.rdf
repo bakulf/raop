@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:raop="http://bakulf.github.io/raop/">
+  <raop:Epistrophe>
+    <dc:creator>Shakespeare</dc:creator>
+    <dc:title>The Tempest</dc:title>
+    <raop:soundElements>
+      <rdf:Seq>
+        <rdf:li>
+          <!-- Hourly joys be still upon you! --><raop:Word raop:value="you" />
+        </rdf:li>
+        <rdf:li>
+          <!-- Juno sings her blessings on you. [...] --><raop:Word raop:value="you" />
+        </rdf:li>
+        <rdf:li>
+          <!-- Scarcity and want shall shun you, --><raop:Word raop:value="you" />
+        </rdf:li>
+        <rdf:li>
+          <!-- Ceres' blessing so is on you. --><raop:Word raop:value="you" />
+        </rdf:li>
+      </rdf:Seq>
+    </raop:soundElements>
+  </raop:Epistrophe>
+</rdf:RDF>

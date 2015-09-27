@@ -1,0 +1,24 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:raop="http://bakulf.github.io/raop/">
+  <!-- In times like these, it is helpful to remember that there have always been times like these -->
+  <raop:Epanalepsis>
+    <raop:soundElements>
+      <rdf:Seq>
+        <rdf:li> 
+          <raop:Group><raop:items><rdf:Seq>
+            <rdf:li><raop:Word raop:value="times" /></rdf:li>
+            <rdf:li><raop:Word raop:value="like" /></rdf:li>
+            <rdf:li><raop:Word raop:value="these" /></rdf:li>
+          </rdf:Seq></raop:items></raop:Group>
+        </rdf:li> 
+        <rdf:li> 
+          <raop:Group><raop:items><rdf:Seq>
+            <rdf:li><raop:Word raop:value="times" /></rdf:li>
+            <rdf:li><raop:Word raop:value="like" /></rdf:li>
+            <rdf:li><raop:Word raop:value="these" /></rdf:li>
+          </rdf:Seq></raop:items></raop:Group>
+        </rdf:li>
+      </rdf:Seq>
+    </raop:soundElements>
+  </raop:Epanalepsis>
+</rdf:RDF>

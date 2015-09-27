@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:raop="http://bakulf.github.io/raop/">
+<raop:Methaphor>
+     <raop:comparison rdf:nodeID="nuvole"/>
+     <raop:interpretation>leggiadri e veloci come cavalli</raop:interpretation>
+     <raop:subject rdf:nodeID="cavalli"/>
+  <raop:sentence>
+    <raop:Group>
+      <raop:items>
+        <rdf:Seq>
+          <rdf:li><raop:Word rdf:nodeID="cavalli" raop:value="cavalli" /></rdf:li>
+          <rdf:li><raop:Word raop:value="sono " /></rdf:li>
+          <rdf:li><raop:Word raop:value="svelti" /></rdf:li>
+          <rdf:li><raop:Word raop:value="come" /></rdf:li>
+          <rdf:li><raop:Word raop:value="le" /></rdf:li>
+          <rdf:li><raop:Word rdf:nodeID="nuvole" raop:value="nuvole" /></rdf:li>
+        </rdf:Seq>
+      </raop:items>
+    </raop:Group>
+  </raop:sentence> 
+</raop:Methaphor>
+
+</rdf:RDF>

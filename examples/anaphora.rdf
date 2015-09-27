@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:raop="http://bakulf.github.io/raop/">
+  <raop:Anaphora>
+    <raop:soundElements>
+      <rdf:Seq>
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This royal throne of kings, this sceptred isle, -->
+        </rdf:li>
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This earth of majesty, this seat of Mars, -->
+        </rdf:li>
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This other Eden, demi-paradise, -->
+        </rdf:li>
+        <rdf:li>
+          <raop:Word raop:value="This" /><!-- This fortress built by Nature for herself -->
+        </rdf:li>
+      </rdf:Seq>
+    </raop:soundElements>
+  </raop:Anaphora>
+</rdf:RDF>
