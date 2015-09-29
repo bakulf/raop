@@ -9,19 +9,19 @@
          nel tenebrore accecante di eterni 
          pomeriggi estivi --> 
         <rdf:li>
-          <raop:SemanticItem>
+          <raop:SemanticItems>
             <raop:item>
               <raop:Word raop:value="tenebrore" />
             </raop:item>
-          </raop:SemanticItem>
+          </raop:SemanticItems>
         </rdf:li>
      
         <rdf:li>
-          <raop:SemanticItem>
+          <raop:SemanticItems>
             <raop:item>
               <raop:Word raop:value="accecante" />
             </raop:item>
-          </raop:SemanticItem>
+          </raop:SemanticItems>
         </rdf:li>
       </rdf:Seq>
     </raop:semanticItem>
