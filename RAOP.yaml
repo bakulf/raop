@@ -152,7 +152,7 @@ classes:
    subclassOf: [ RethoricalDevice, Trope ]
    # TODO example: '../examples/metonymy.rdf'
    
-    - name: Onomatopoeia
+ - name: Onomatopoeia
    comment: "Using or inventing a word whose sound imitates that which it names (the union of phonetics and semantics)."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
@@ -183,8 +183,6 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
    
-   
-   
  - name: Simile
    comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
    subclassOf: [ RethoricalDevice, Trope ]
@@ -203,6 +201,7 @@ classes:
    example: '../examples/synesthesia.rdf'
 
 properties:
+
  - name: value
    label: Has a literal value
    comment: ""
@@ -250,6 +249,11 @@ properties:
    label: The subject
    comment: ""
    domain: [ Simile, Metaphor ]
+   
+ - name: sense
+   label: Has a particular meaning regarding a sense domain
+   comment: ""
+   domain: [ SemanticItem ]
 
  - name: sentence
    label: The sentence of the rethorical device
