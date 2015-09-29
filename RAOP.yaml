@@ -108,7 +108,7 @@ classes:
 
  - name: SemanticItem
    label: Semantic Item
-   comment: ""
+   comment: "Add a semantic realm to the world"
 
  - name: Anaphora
    comment: "Repetition of the same word or group of words at the beginning of successive clauses, sentences, or lines."
@@ -197,6 +197,7 @@ classes:
    example: '../examples/synesthesia.rdf'
 
 properties:
+
  - name: value
    label: Has a literal value
    comment: ""
@@ -244,6 +245,11 @@ properties:
    label: The subject
    comment: ""
    domain: [ Simile, Metaphor ]
+   
+ - name: sense
+   label: Has a particular meaning regarding a sense domain
+   comment: ""
+   domain: [ SemanticItem ]
 
  - name: sentence
    label: The sentence of the rethorical device
