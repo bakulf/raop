@@ -105,6 +105,12 @@ classes:
    label: Syntactical Figure
    comment: ""
    subclassOf: FigureCategory
+   
+ - name: SemanticItem
+   label: Semantic Item
+   comment: ""
+   subclassOf: 
+   
 
  - name: Anaphora
    comment: "Repetition of the same word or group of words at the beginning of successive clauses, sentences, or lines."
@@ -177,6 +183,8 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
    
+   
+   
  - name: Simile
    comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
    subclassOf: [ RethoricalDevice, Trope ]
@@ -192,7 +200,7 @@ classes:
    comment: "In semantics and cognitive linguistics, a metaphorical process by which one sense modality is described or characterized in terms of another, such as a bright sound or a quiet color."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory ]
-   example: '../examples/synecdoche.rdf'
+   example: '../examples/synesthesia.rdf'
 
 properties:
  - name: value
