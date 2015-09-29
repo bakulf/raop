@@ -105,30 +105,18 @@ classes:
    label: Syntactical Figure
    comment: ""
    subclassOf: FigureCategory
+   
+ - name: SemanticItem
+   label: Semantic Item
+   comment: ""
+   subclassOf: 
+   
 
  - name: Anaphora
    comment: "Repetition of the same word or group of words at the beginning of successive clauses, sentences, or lines."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    example: '../examples/anaphora.rdf'
-
- - name: Epistrophe
-   comment: "Ending a series of lines, phrases, clauses, or sentences with the same word or words."
-   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
-   raopCategory: [ AdditionCategory, SyntacticalFigure ]
-   example: '../examples/epistrophe.rdf'
-
- - name: Epanalepsis
-   comment: "Repetition of the same word or clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause."
-   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
-   raopCategory: [ AdditionCategory, SyntacticalFigure ]
-   example: '../examples/epanalepsis.rdf'
-
- - name: Polysyndeton
-   comment: ""
-   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
-   raopCategory: [ AdditionCategory, SyntacticalFigure ]
-   # TODO example: '../examples/epanalepsis.rdf'
 
  - name: Assonance
    comment: "Repetition of similar vowel sounds, preceded and followed by different consonants, in the stressed syllables of adjacent words."
@@ -142,7 +130,29 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    example: '../examples/alliteration.rdf'
 
- - name: Onomatopoeia
+ - name: Epistrophe
+   comment: "Ending a series of lines, phrases, clauses, or sentences with the same word or words."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/epistrophe.rdf'
+
+ - name: Epanalepsis
+   comment: "Repetition of the same word or clause after intervening matter. More strictly, repetition at the end of  a line, phrase, or clause of the word or words that occurred at the  beginning of the same line, phrase, or clause."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   example: '../examples/epanalepsis.rdf'
+
+ - name: Metaphor
+   comment: "A comparison made by referring to one thing as another."
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/metaphor.rdf'
+
+ - name: Metonymy
+   comment: "Reference to something or someone by naming one of its attributes."
+   subclassOf: [ RethoricalDevice, Trope ]
+   # TODO example: '../examples/metonymy.rdf'
+   
+    - name: Onomatopoeia
    comment: "Using or inventing a word whose sound imitates that which it names (the union of phonetics and semantics)."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
@@ -159,6 +169,13 @@ classes:
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
+   
+   
+ - name: Polysyndeton
+   comment: ""
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory, SyntacticalFigure ]
+   # TODO example: '../examples/epanalepsis.rdf'
 
  - name: Rhyme
    comment: "Correspondence of sound between words or the endings of words, especially when these are used at the ends of lines of poetry."
@@ -166,25 +183,21 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
 
- - name: Metaphor
-   comment: "A comparison made by referring to one thing as another."
+ - name: Simile
+   comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
    subclassOf: [ RethoricalDevice, Trope ]
-   #example: '../examples/metaphor.rdf'
-
- - name: Metonymy
-   comment: "Reference to something or someone by naming one of its attributes."
-   subclassOf: [ RethoricalDevice, Trope ]
-   # TODO example: '../examples/metonymy.rdf'
-
+   example: '../examples/simile.rdf'
+   
  - name: Synecdoche
    comment: "A whole is represented by naming one of its parts (genus named for species), or vice versa (species named for genus)."
    subclassOf: [ RethoricalDevice, Trope ]
    # TODO example: '../examples/synecdoche.rdf'
 
- - name: Simile
-   comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
-   subclassOf: [ RethoricalDevice, Trope ]
-   example: '../examples/simile.rdf'
+ - name: Synesthesia
+   comment: "In semantics and cognitive linguistics, a metaphorical process by which one sense modality is described or characterized in terms of another, such as a bright sound or a quiet color."
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory ]
+   example: '../examples/synesthesia.rdf'
 
 properties:
  - name: value
@@ -240,3 +253,9 @@ properties:
    comment: ""
    domain: [ Metaphor, Metonymy, Synecdoche, Simile ]
    range: Group
+   
+ - name: semanticItem
+   label: Has a list of semantic items
+   comment: ""
+   domain: FigureOfThought
+   range: [ Group, Word ]
