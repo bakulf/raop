@@ -3,7 +3,7 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:raop="http://bakulf.github.io/raop/">
   <raop:Synesthesia>
-    <raop:SemanticItem>
+    <raop:SemanticItems>
       <rdf:Seq>
         <!-- Quando mi chiese: "Conosci l'estate?"
              io per un giorno per un momento, corsi a vedere il --> 
@@ -23,6 +23,6 @@
           </raop:SemanticItem>
         </rdf:li>
       </rdf:Seq>
-    </raop:SemanticItem>
+    </raop:SemanticItems>
   </raop:Synesthesia>
 </rdf:RDF>

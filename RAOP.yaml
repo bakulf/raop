@@ -105,12 +105,10 @@ classes:
    label: Syntactical Figure
    comment: ""
    subclassOf: FigureCategory
-   
+
  - name: SemanticItem
    label: Semantic Item
    comment: ""
-   subclassOf: 
-   
 
  - name: Anaphora
    comment: "Repetition of the same word or group of words at the beginning of successive clauses, sentences, or lines."
@@ -151,8 +149,8 @@ classes:
    comment: "Reference to something or someone by naming one of its attributes."
    subclassOf: [ RethoricalDevice, Trope ]
    # TODO example: '../examples/metonymy.rdf'
-   
-    - name: Onomatopoeia
+
+ - name: Onomatopoeia
    comment: "Using or inventing a word whose sound imitates that which it names (the union of phonetics and semantics)."
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
@@ -169,8 +167,7 @@ classes:
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
-   
-   
+
  - name: Polysyndeton
    comment: ""
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
@@ -187,7 +184,7 @@ classes:
    comment: "An explicit comparison, often (but not necessarily) employing \"like\" or \"as.\""
    subclassOf: [ RethoricalDevice, Trope ]
    example: '../examples/simile.rdf'
-   
+
  - name: Synecdoche
    comment: "A whole is represented by naming one of its parts (genus named for species), or vice versa (species named for genus)."
    subclassOf: [ RethoricalDevice, Trope ]
@@ -253,8 +250,8 @@ properties:
    comment: ""
    domain: [ Metaphor, Metonymy, Synecdoche, Simile ]
    range: Group
-   
- - name: semanticItem
+
+ - name: semanticItems
    label: Has a list of semantic items
    comment: ""
    domain: FigureOfThought
