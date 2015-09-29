@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:raop="http://bakulf.github.io/raop/">
+  <raop:Synesthesia>
+    <raop:SemanticItem>
+      <rdf:Seq>
+        <!-- Quando mi chiese: "Conosci l'estate?"
+             io per un giorno per un momento, corsi a vedere il --> 
+        <rdf:li>
+          <raop:SemanticItem roap:sense="vista">
+            <raop:item>
+              <raop:Word raop:value="colore" />
+            </raop:item>
+          </raop:SemanticItem>
+        </rdf:li>
+        <!-- del -->
+        <rdf:li>
+          <raop:SemanticItem roap:sense="tatto">
+            <raop:item>
+              <raop:Word raop:value="vento" />
+            </raop:item>
+          </raop:SemanticItem>
+        </rdf:li>
+      </rdf:Seq>
+    </raop:SemanticItem>
+  </raop:Synesthesia>
+</rdf:RDF>
