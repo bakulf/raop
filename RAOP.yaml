@@ -108,8 +108,8 @@ classes:
    
  - name: SemanticItem
    label: Semantic Item
-   comment: ""
-   subclassOf: 
+   comment: "Add a semantic realm to the world"
+
    
 
  - name: Anaphora
