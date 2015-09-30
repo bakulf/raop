@@ -2,28 +2,28 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:raop="http://bakulf.github.io/raop/">
-  <raop:Synesthesia>
+  <raop:Oxymoron>
     <raop:semanticItem>
       <rdf:Seq>
         <!-- l'adolescenza mischiata
          nel tenebrore accecante di eterni 
          pomeriggi estivi --> 
         <rdf:li>
-          <raop:SemanticItems roap:sense="vista">
+          <raop:SemanticItems>
             <raop:item>
-              <raop:Word raop:value="colore" />
+              <raop:Word raop:value="tenebrore" />
             </raop:item>
           </raop:SemanticItems>
         </rdf:li>
-        <!-- del -->
+     
         <rdf:li>
-          <raop:SemanticItems roap:sense="tatto">
+          <raop:SemanticItems>
             <raop:item>
-              <raop:Word raop:value="vento" />
+              <raop:Word raop:value="accecante" />
             </raop:item>
           </raop:SemanticItems>
         </rdf:li>
       </rdf:Seq>
     </raop:semanticItem>
-  </raop:Synesthesia>
+  </raop:Oxymoron>
 </rdf:RDF>

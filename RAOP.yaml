@@ -157,6 +157,12 @@ classes:
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
+   
+-  name: Oxymoron
+   comment: "A figure of speech in which apparently contradictory terms appear in conjunction"
+   subclassOf: [ RethoricalDevice, FigureOfSpeech ]
+   raopCategory: [ AdditionCategory ]
+   example: '../examples/oxymoron.rdf'
 
  - name: Paronomasia
    comment: "Using words that sound alike but that differ in meaning (punning).  The Ad Herennium author further specifies that this is brought about through various kinds of metaplasm."
