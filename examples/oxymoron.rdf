@@ -3,7 +3,7 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:raop="http://bakulf.github.io/raop/">
   <raop:Oxymoron>
-    <raop:semanticItem>
+    <raop:semanticItems>
       <rdf:Seq>
         <!-- l'adolescenza mischiata
          nel tenebrore accecante di eterni 
@@ -24,6 +24,6 @@
           </raop:SemanticItems>
         </rdf:li>
       </rdf:Seq>
-    </raop:semanticItem>
+    </raop:semanticItems>
   </raop:Oxymoron>
 </rdf:RDF>
