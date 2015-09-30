@@ -156,7 +156,7 @@ classes:
    raopCategory: [ AdditionCategory, SyntacticalFigure ]
    # TODO example: '../examples/epanalepsis.rdf'
    
--  name: Oxymoron
+ - name: Oxymoron
    comment: "A figure of speech in which apparently contradictory terms appear in conjunction"
    subclassOf: [ RethoricalDevice, FigureOfSpeech ]
    raopCategory: [ AdditionCategory ]
