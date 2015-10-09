@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:raop="http://bakulf.github.io/raop/">
+      <raop:Chiasmus>
+        <!-- segnò il principio di un destino misto/di gioie e di miserie, se più miserie/o più gioie non è facile distinguere,  -->
+        <raop:conceptualItems>
+          <rdf:Seq>
+            <rdf:li>
+              <raop:Word raop:value="di gioie" />
+            </rdf:li>
+            <rdf:li>
+              <raop:Word raop:value="di miserie" />
+            </rdf:li>
+          </rdf:Seq>
+        </raop:conceptualItems>
+        
+        <raop:invertedItems>
+          <rdf:Seq>
+            <rdf:li>
+              <raop:Word raop:value="di miserie" />
+            </rdf:li>
+            <rdf:li>
+              <raop:Word raop:value="di gioie" />
+            </rdf:li>
+          </rdf:Seq>
+        </raop:invertedItems>
+      </raop:Chiasmus>
+    </rdf:RDF>
+    
+  
+  
