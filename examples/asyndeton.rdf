@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:raop="https://github.com/tizzja/raop/v1.0#">
+    <raop:asyndeton>
+    <raop:SyntacticalFigure>
+        <!-- in altre plaghe / dove fioriscono belle donne / 
+            oziose, ornate, portate all'amore -->
+        <rdf:Seq>
+            <rdf:li><raop:Group>
+                <raop:items><rdf:Seq>
+                    <rdf:li><raop:Word raop:value="oziose"/></rdf:li>
+                </rdf:Seq></raop:items>
+            </raop:Group></rdf:li>
+            <rdf:li><raop:Group>
+                <raop:items><rdf:Seq>
+                    <rdf:li><raop:Word raop:value="ornate"/></rdf:li>
+                </rdf:Seq></raop:items>
+            </raop:Group>
+                <rdf:li><raop:Group>
+                    <raop:items><rdf:Seq>
+                        <rdf:li><raop:Word raop:value="portate all'amore"/></rdf:li>
+                    </rdf:Seq></raop:items>
+                </raop:Group>
+            </rdf:li>
+        </rdf:Seq>
+    </raop:SyntacticalFigure>
+</raop:asyndeton>
+</rdf:RDF>
+
