@@ -4,7 +4,7 @@
          xmlns:raop="http://bakulf.github.io/raop/">
 <raop:Simile>
      <raop:comparison rdf:nodeID="nuvole"/>
-     <raop:interpretation>leggiadri e veloci come cavalli</raop:interpretation>
+     <raop:interpretation>leggiadri e veloci come le nuvole</raop:interpretation>
      <raop:subject rdf:nodeID="cavalli"/>
   <raop:sentence>
     <raop:Group>
