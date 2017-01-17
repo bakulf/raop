@@ -252,6 +252,11 @@ properties:
    comment: ""
    domain: [ Simile, Metaphor ]
    
+ - name: linkingContent
+   label: What connects the subject and the comparison nodes
+   comment: ""
+   domain: [ Simile, Metaphor ]
+   
  - name: sense
    label: Has a particular meaning regarding a sense domain
    comment: ""

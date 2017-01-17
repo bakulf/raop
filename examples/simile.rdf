@@ -6,13 +6,14 @@
      <raop:comparison rdf:nodeID="nuvole"/>
      <raop:interpretation>leggiadri e veloci come le nuvole</raop:interpretation>
      <raop:subject rdf:nodeID="cavalli"/>
+     <raop:linkingContent rdf:nodeID="svelti"/>
   <raop:sentence>
     <raop:Group>
       <raop:items>
         <rdf:Seq>
           <rdf:li><raop:Word rdf:nodeID="cavalli" raop:value="cavalli" /></rdf:li>
           <rdf:li><raop:Word raop:value="sono " /></rdf:li>
-          <rdf:li><raop:Word raop:value="svelti" /></rdf:li>
+          <rdf:li><raop:Word rdf:nodeID="svelti" raop:value="svelti" /></rdf:li>
           <rdf:li><raop:Word raop:value="come" /></rdf:li>
           <rdf:li><raop:Word raop:value="le" /></rdf:li>
           <rdf:li><raop:Word rdf:nodeID="nuvole" raop:value="nuvole" /></rdf:li>
