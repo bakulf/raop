@@ -1,5 +1,5 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:raop="http://bakulf.github.io/raop/">
+         xmlns:raop="http://bakulf.github.io/raop/0.1#">
   <!-- In times like these, it is helpful to remember that there have always been times like these -->
   <raop:Epanalepsis>
     <raop:soundElements>
