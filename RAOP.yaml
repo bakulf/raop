@@ -1,4 +1,5 @@
 template: template.html
+rdf_template: template.rdf
 
 vars:
   title: "RAOP: Rethorical Annotation Ontology Project"

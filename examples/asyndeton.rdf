@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:raop="https://github.com/tizzja/raop/v1.0#">
+    xmlns:raop="http://bakulf.github.io/raop/0.1#">
     <raop:asyndeton>
     <raop:SyntacticalFigure>
         <!-- in altre plaghe / dove fioriscono belle donne / 
