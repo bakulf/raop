@@ -40,7 +40,6 @@ data['classes'].each do |x|
   c += "    <rdfs:isDefinedBy rdf:resource=\"&raop;\" />\n"
   c += "    <rdf:type rdf:resource=\"&rdfs;Class\" />\n"
   c += "    <rdf:type rdf:resource=\"&owl;Class\" />\n"
-  c += "    <rdfs:subClassOf rdf:resource=\"&rdf;Property\" />\n"
 
   if x.include? 'equivalentClasses'
     x['equivalentClasses'].each do |eq|
